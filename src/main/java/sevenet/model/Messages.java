@@ -256,7 +256,9 @@ public class Messages implements Serializable {
 
     @Override
     public String toString() {
-        return "sevenet.model.Messages[ topic=" + topic + " ]";
+        return "Messages{" + "id=" + id + ", pmsId=" + pmsId + ", thrId=" + thrId + ", topic=" + topic + ", text=" + text + ", login=" + login + ", eqNumber=" + eqNumber + ", createDate=" + createDate + ", status=" + status + ", system=" + system + ", worker=" + worker + ", resend=" + resend + ", updateDateDb=" + updateDateDb + '}';
     }
+
+   
     
 }

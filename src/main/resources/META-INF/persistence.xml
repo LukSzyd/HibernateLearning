@@ -3,6 +3,10 @@
   <persistence-unit name="com.metadata_HibernateTest_jar_1.0.0.0PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>sevenet.model.Messages</class>
+    <class>sevenet.model.EgplCasemgmtCustomer</class>
+    <class>sevenet.model.EgplCasemgmtContactPerson</class>
+    <class>sevenet.model.EgplCasemgmtContactPoint</class>
+    <class>sevenet.model.EgplCasemgmtActivity</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://10.10.252.61:5432/bnpcimconnector"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
