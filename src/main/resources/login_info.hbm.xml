@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "sevenet.model.Login_info" table = "login_info">
+      
+      <meta attribute = "class-description">
+         This class contains the login detail. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="sequence">
+            <param name="sequence">public.login_info_id_seq</param>
+         </generator>
+      </id>
+      
+      <property name = "thr_id" column = "thr_id" type = "string"/>
+      <property name = "old_login" column = "old_login" type = "string"/>
+      <property name = "temp_login" column = "temp_login" type = "string"/>
+      
+   </class>
+</hibernate-mapping>
